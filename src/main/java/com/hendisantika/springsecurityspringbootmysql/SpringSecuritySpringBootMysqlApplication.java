@@ -1,11 +1,15 @@
 package com.hendisantika.springsecurityspringbootmysql;
 
+import com.hendisantika.springsecurityspringbootmysql.domain.AppUser;
+import com.hendisantika.springsecurityspringbootmysql.domain.Role;
 import com.hendisantika.springsecurityspringbootmysql.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import java.util.Arrays;
 
 @SpringBootApplication
 public class SpringSecuritySpringBootMysqlApplication implements CommandLineRunner {
@@ -28,7 +32,6 @@ public class SpringSecuritySpringBootMysqlApplication implements CommandLineRunn
     public void run(String... arg0) {
         //Remove or comment this part after first execution of application,
         //or else duplicate data will be inserted in the database
-		/*
 		AppUser admin = new AppUser();
 		admin.setActive(true);
 		admin.setPassword(encoder.encode("password"));
@@ -42,7 +45,7 @@ public class SpringSecuritySpringBootMysqlApplication implements CommandLineRunn
 		user.setUsername("user");
 		user.setRoles(Arrays.asList(new Role("USER")));
 		userService.saveUser(user);
-		*/
+
 
     }
 }

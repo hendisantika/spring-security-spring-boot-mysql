@@ -1,5 +1,7 @@
 package com.hendisantika.springsecurityspringbootmysql.config;
 
+import com.hendisantika.springsecurityspringbootmysql.repository.UserRepository;
+import com.hendisantika.springsecurityspringbootmysql.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
